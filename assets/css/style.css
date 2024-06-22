@@ -56,15 +56,15 @@ a {
   margin-right: auto;
 }
 
-.line-clamp{
+.line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.line-clamp.line-2{
-  --line-clamp:2;
+.line-clamp.line-2 {
+  --line-clamp: 2;
 }
 
 /* ==============header========== */
@@ -335,83 +335,149 @@ header .action {
 }
 
 /* popular bottom */
-.popular-bottom{
-    display: flex;
-    margin-top: 55px;
-    justify-content: space-between;
+.popular-bottom {
+  display: flex;
+  margin-top: 55px;
+  justify-content: space-between;
 }
 
-.popular-bottom .course{
-    width: 370px;
-    height: 466px;
-    border-radius: 12px;
-    background: #FFF;
-    border: 1px solid #E2DFDA;
+.popular-bottom .course {
+  width: 370px;
+  height: 466px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e2dfda;
 }
 
-.popular-bottom .course:hover{
-    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05); 
-    border: none;   
+.popular-bottom .course:hover {
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+  border: none;
 }
 
-.popular-bottom .thumb{
-    width: 100%;
-    height: 278px;  
-    border-radius: 12px 12px 0px 0px;
-    object-fit: cover;
+.popular-bottom .thumb {
+  width: 100%;
+  height: 278px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
 }
 
-.popular .popular-bottom .infor{
-    padding: 16px 22px 22px;
+.popular .popular-bottom .infor {
+  padding: 16px 22px 22px;
 }
 
 .popular-bottom .foot,
 .popular-bottom .rating,
-.popular-bottom .head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.popular-bottom .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.popular-bottom .title{
-    color: #171100;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.67; /* 166.667% */
+.popular-bottom .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
 }
 
-.popular-bottom .rating .rating-point{
-    color: #FEA31B;
-    margin-left: 6px;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
+.popular-bottom .rating .rating-point {
+  color: #fea31b;
+  margin-left: 6px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
 }
 
-.popular-bottom .desc{
-    margin-top: 6px;
-    color: #5F5B53;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.86; /* 185.714% */
+.popular-bottom .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
 }
 
-.popular-bottom .foot{
-    margin-top: 12px;
+.popular-bottom .foot {
+  margin-top: 12px;
 }
 
-.popular-bottom .price{
-    color: #171100;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.67; /* 166.667% */
+.popular-bottom .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
 }
 
-.popular-bottom .course-btn{
-    border: none;
+.popular-bottom .course-btn {
+  border: none;
 }
 
-.popular-bottom .course-btn:hover{
-    background: var(--primary-color);
+.popular-bottom .course-btn:hover {
+  background: var(--primary-color);
 }
 
+/* =================feedback============= */
+
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+
+.feedback-item {
+  display: flex;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+
+.feedback-item .dots {
+  gap: 6px;
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .dot.active{
+  background: var(--primary-color);
+  cursor: default;
+}
+
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54; /* 153.846% */
+}
