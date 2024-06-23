@@ -643,8 +643,29 @@ header .action {
 
 .blog .blog-item .btn{
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 
 .blog .blog-item .btn:hover{
   background: var(--primary-color);
+}
+
+.blog .dots{
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 38px;
+}
+
+.blog .dot{
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  background: #5F5B53;
+  cursor: pointer;
+}
+
+.blog .dot.active{
+  background: var(--primary-color);
+  cursor: default;
 }
