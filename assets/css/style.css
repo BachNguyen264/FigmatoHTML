@@ -423,7 +423,7 @@ header .action {
   background: #2e2100;
 }
 
-.feedback-list{
+.feedback-list {
   display: flex;
   overflow: hidden;
 }
@@ -473,7 +473,7 @@ header .action {
   cursor: pointer;
 }
 
-.feedback-item .dot.active{
+.feedback-item .dot.active {
   background: var(--primary-color);
   cursor: default;
 }
@@ -488,4 +488,51 @@ header .action {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54; /* 153.846% */
+}
+
+/* ============feature================= */
+.feature {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.feature .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature .images {
+  display: flex;
+  gap: 30px;
+}
+
+.feature .images img {
+  width: 270px;
+  height: 405px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.feature .lower {
+  margin-top: 34px;
+}
+
+.feature .content {
+  width: 40.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature .desc {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.feature .cta-btn{
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background: var(--primary-color);
 }
